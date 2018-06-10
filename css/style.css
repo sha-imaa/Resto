@@ -1,0 +1,392 @@
+    /* General syntax */
+body
+{
+    margin:0 auto;
+    width:90%;
+    font-family:Arial,Tahoma
+
+}
+
+header
+{
+  clear:both
+}
+
+h1
+{
+  font-family: 'Dancing Script',cursive;
+  margin-top:90px
+}
+h2
+{
+ color:#66615e;
+ margin-left:100px;
+ margin-top:50px;
+ font-weight:200;
+ height:50px;
+ display:inline-block
+}
+footer
+{
+   width:100%;
+   height:200px;
+   float:left;
+   background-color:#242a2c;
+   display:flex;
+   justify-content:space-around;
+   white-space:pre-line;
+   color:#fff
+}
+ 
+
+ /* Header's site */
+             
+.logoNav
+{
+    width:100%;
+    height:100px;
+    font-family: 'Mrs Sheppards', cursive;
+    font-size:40px
+    
+}
+
+.logoNav p
+{
+    margin-left:40px
+}
+.logoNav span, footer div span
+{
+    color:red;
+    font-weight:bold
+}
+
+
+ul
+{
+   list-style-type:none;
+   margin-left:400px;
+   width:60%;
+   position:relative;
+   bottom:80px
+   
+}
+
+ul li 
+{
+   display:inline-block
+}
+
+ul li a, .normal
+{
+      text-decoration:none;
+      padding:20px;
+      color:#66615e;
+      font-size:20px;
+      font-weight:bold;
+      transition:all .4s ease-in-out;
+      position:relative
+}
+
+ul li a:hover
+{
+ opacity:.6
+}
+ul li a:after{
+   content:"";
+   display:inline-block;
+   position:absolute;
+   left:0px;
+   bottom:-1px;
+   width:0;
+   height:3px;
+   background-color:#66615e;
+   transition:all ease-in-out 
+}
+ul li a:hover:after
+{
+   width:100%
+}
+.activeLink
+{
+ opacity:.6
+}
+.activeLink:after
+{
+   content:"";
+   display:inline-block;
+   position:absolute;
+   left:0px;
+   bottom:-1px;
+   width:100%;
+   height:3px;
+   background-color:#66615e;
+   transition:all ease-in-out 
+}
+
+               /*content */
+.content
+{
+   background-image:url("../imgs/background.png");
+   background-repeat:no-repeat;
+   background-size:100%;
+   clear:both;
+   width:100%;
+   height:400px;
+   color:#33421b;
+   white-space:p+re-line;
+   text-align:center;
+   opacity:.5;
+   border-bottom: solid 5px #df2645
+}
+ 
+ .square-cut:after {
+  content: 'Menu';
+  border-right: 30px solid #df2645;
+  border-left: 30px solid #df2645;
+  border-bottom: 10px solid #fff;
+  padding:30px 0;
+  background-color:#df2645;
+  position:relative;
+  top:30px;
+  left:510px;
+  opacity:.7;
+  color:#fff;
+  font-weight:bold
+}
+.square-cut:hover
+{
+ opacity:.5;
+ cursor:pointer;
+ 
+}
+
+.foodMenu
+{
+  white-space: pre-line;
+  color:#66615e;
+  font-size:20px;
+  width:100%;
+  height:500px;
+  line-height:8px;
+   display:flex;
+  justify-content: space-around
+}
+
+.foodMenu div
+{
+  float:right;
+  width:40%;
+  height:400px;
+  margin-top:70px;
+ 
+}
+
+
+.foodMenu span
+{
+  color:#d9dfdf;
+  font-size:15px
+}
+           
+form    /* load more menu pages */
+{
+  text-align:center;
+  
+}
+
+form select
+{
+ padding:5px 10px;
+ color:#d9dfdf;
+ background-color:#fff
+}
+form select:hover
+{
+ opacity:.5;
+ cursor:pointer
+}
+
+
+ .slideContainer
+ {
+   width:100%;
+  
+   clear:both;
+   background-color:#fff;
+   color:#d9dfdf;
+   position:relative;
+ }
+  .slideContainer span,.foodGallery span
+  {
+      color:#d9dfdf
+  }
+ 
+ .mySlideFade
+ {
+   width:90%;
+   margin-left:50px;
+   display:none;
+ }
+
+ 
+  .mySlideFade div
+  {
+    float:left;
+    width:25%;
+    text-align:center
+  }
+  .mySlideFade img
+  {
+   width:58%;
+   height:150px;
+   cursor:pointer
+  }
+  .mySlideFade img:hover
+    {
+     opacity:.5
+    }
+  .bubbleEffect
+  {
+   width:100px;
+   height:50px;
+   position:relative
+   
+  }
+  
+.dot
+{
+  width:10px;
+  height:10px;
+  cursor:pointer;
+  background-color:#bbb;
+  border-radius:50%;
+  display:inline-block;
+  position:relative;
+  bottom:270px;
+  left:990%
+  
+}
+
+.active,.dot:hover
+{
+  background-color: #717171;
+}
+.foodGallery
+{
+ clear:both;
+ width:941px;
+ height:500px;
+ display:flex;
+ justify-content: flex-start
+}
+
+.foodGallery section
+{
+ margin-top:150px;
+ height:350px
+}
+
+.foodGallery div
+{
+ width:200px;
+ float:right;
+ height:150px
+}
+.image div
+{
+ height:300px
+}
+.image img
+{
+ height:300px
+}
+.foodGallery img
+{
+  width:100%;
+  height:150px;
+  cursor:pointer
+}
+.foodGallery img:hover
+{
+ opacity:.7
+}
+
+.foodGallery .image
+{
+ width:250px;
+ height:100%;
+ position:relative;
+ top:50%;
+ left:11%;
+ transform:translate(-50%,-50%);
+ overflow:hidden
+}
+.imgBox
+{
+ position:absolute;
+ right:0;
+ top:0;
+ overflow:hidden;
+ height:300px;
+ transition:.5s
+}
+.foodGallery .images
+{
+ width:600px;
+ height:300px
+}
+.textBox
+{
+ width:40%;
+ position:absolute;
+ background:red;
+ padding:20px;
+ box-sizing: border-box;
+ transform-origin:left;
+ transition:.5s;
+ color:#fff;
+ transform:perspective(600px) rotatey(90deg);
+}
+.textBox h3
+{
+ margin:10px;
+ font-size:15px;
+ font-weight:bold;
+ 
+}
+.textBox p
+{
+  font-size:12px;
+  text-align:center;
+  
+}
+.textBox a
+{
+ text-decoration:none;
+ color:#fff
+}
+.textBox a:hover
+{
+ opacity:.7
+}
+.image:hover .textBox
+{
+ transform:perspective(600px) rotatey(0deg);
+}
+footer .address
+{
+ color:#848b8b;
+ cursor:pointer
+}
+footer .address:hover
+{
+ opacity:.6
+}
+ol li 
+{
+  cursor:pointer
+}
+ol li:hover
+{
+  opacity:.7
+}
