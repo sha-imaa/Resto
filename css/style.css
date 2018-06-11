@@ -2,14 +2,16 @@
 body
 {
     margin:0 auto;
-    width:90%;
-    font-family:Arial,Tahoma
-
+    width:100%;
+    font-family:Arial,Tahoma;
+    overflow-x:hidden
 }
 
 header
 {
-  clear:both
+  clear:both;
+  width:100%;
+  
 }
 
 h1
@@ -43,10 +45,11 @@ footer
              
 .logoNav
 {
-    width:100%;
+    width:90%;
     height:100px;
     font-family: 'Mrs Sheppards', cursive;
-    font-size:40px
+    font-size:40px;
+    margin-left:90px
     
 }
 
@@ -104,7 +107,7 @@ ul li a:after{
 }
 ul li a:hover:after
 {
-   width:100%
+   width:90%
 }
 .activeLink
 {
@@ -132,8 +135,8 @@ ul li a:hover:after
    clear:both;
    width:100%;
    height:400px;
-   color:#33421b;
-   white-space:p+re-line;
+   color:#df2645;
+   white-space:pre-line;
    text-align:center;
    opacity:.5;
    border-bottom: solid 5px #df2645
@@ -144,11 +147,11 @@ ul li a:hover:after
   border-right: 30px solid #df2645;
   border-left: 30px solid #df2645;
   border-bottom: 10px solid #fff;
-  padding:30px 0;
+  padding:20px 0;
   background-color:#df2645;
   position:relative;
-  top:30px;
-  left:510px;
+  top:20px;
+  left:560px;
   opacity:.7;
   color:#fff;
   font-weight:bold
@@ -168,8 +171,9 @@ ul li a:hover:after
   width:100%;
   height:500px;
   line-height:8px;
-   display:flex;
-  justify-content: space-around
+  display:flex;
+  justify-content: space-around;
+  margin-left:40px
 }
 
 .foodMenu div
@@ -210,7 +214,6 @@ form select:hover
  .slideContainer
  {
    width:100%;
-  
    clear:both;
    background-color:#fff;
    color:#d9dfdf;
@@ -274,21 +277,22 @@ form select:hover
 .foodGallery
 {
  clear:both;
- width:941px;
- height:500px;
+ width:90%;
+ height:350px;
  display:flex;
  justify-content: flex-start
 }
 
 .foodGallery section
 {
- margin-top:150px;
- height:350px
+ margin-top:50px;
+ height:300px;
+ 
 }
 
 .foodGallery div
 {
- width:200px;
+ width:300px;
  float:right;
  height:150px
 }
@@ -313,11 +317,10 @@ form select:hover
 
 .foodGallery .image
 {
- width:250px;
- height:100%;
+ width:300px;
+ height:300px;
  position:relative;
- top:50%;
- left:11%;
+ top:31%;
  transform:translate(-50%,-50%);
  overflow:hidden
 }
@@ -328,11 +331,13 @@ form select:hover
  top:0;
  overflow:hidden;
  height:300px;
- transition:.5s
+ transition:.5s;
+ width:300px;
+ 
 }
 .foodGallery .images
 {
- width:600px;
+ width:900px;
  height:300px
 }
 .textBox
