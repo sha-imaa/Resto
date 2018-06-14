@@ -37,7 +37,8 @@ footer
    display:flex;
    justify-content:space-around;
    white-space:pre-line;
-   color:#fff
+   color:#fff;
+   padding-bottom:30px
 }
  
 
@@ -64,7 +65,7 @@ footer
 }
 
 
-ul
+.logoNav ul
 {
    list-style-type:none;
    margin-left:400px;
@@ -74,12 +75,12 @@ ul
    
 }
 
-ul li 
+.logoNav ul li 
 {
    display:inline-block
 }
 
-ul li a, .normal
+.logoNav ul li a, .normal
 {
       text-decoration:none;
       padding:20px;
@@ -90,11 +91,11 @@ ul li a, .normal
       position:relative
 }
 
-ul li a:hover
+.logoNav ul li a:hover
 {
  opacity:.6
 }
-ul li a:after{
+.logoNav ul li a:after{
    content:"";
    display:inline-block;
    position:absolute;
@@ -105,7 +106,7 @@ ul li a:after{
    background-color:#66615e;
    transition:all ease-in-out 
 }
-ul li a:hover:after
+.logoNav ul li a:hover:after
 {
    width:90%
 }
@@ -245,15 +246,14 @@ form select:hover
    cursor:pointer
   }
   .mySlideFade img:hover
-    {
+  {
      opacity:.5
-    }
+  }
   .bubbleEffect
   {
    width:100px;
    height:50px;
    position:relative
-   
   }
   
 .dot
@@ -267,46 +267,34 @@ form select:hover
   position:relative;
   bottom:270px;
   left:990%
-  
 }
 
 .active,.dot:hover
 {
   background-color: #717171;
 }
+               /*food gallery selection*/
 .foodGallery
 {
  clear:both;
- width:90%;
- height:350px;
- display:flex;
- justify-content: flex-start
-}
-
+ width:100%;
+ height:300px;
+ }
 .foodGallery section
 {
- margin-top:50px;
- height:300px;
+ height:300px
+}
+.foodGallery div
+{
+ float:right;
+ width:360px;
+ height:150px
  
 }
 
-.foodGallery div
-{
- width:300px;
- float:right;
- height:150px
-}
-.image div
-{
- height:300px
-}
-.image img
-{
- height:300px
-}
 .foodGallery img
 {
-  width:100%;
+  width:360px;
   height:150px;
   cursor:pointer
 }
@@ -315,15 +303,23 @@ form select:hover
  opacity:.7
 }
 
-.foodGallery .image
+.images
 {
- width:300px;
+ width:720px;
+ margin-left:430px;
+ position:relative;
+ bottom:200px;
+ height:300px
+}
+.foodGallery .image,.image img
+{
+ width:380px;
  height:300px;
  position:relative;
- top:31%;
- transform:translate(-50%,-50%);
- overflow:hidden
+ left:50px;
+ top:50px
 }
+
 .imgBox
 {
  position:absolute;
@@ -332,29 +328,32 @@ form select:hover
  overflow:hidden;
  height:300px;
  transition:.5s;
- width:300px;
- 
+ width:360px
 }
-.foodGallery .images
+.image img,.image div
 {
- width:900px;
- height:300px
+ height:350px
 }
 .textBox
 {
- width:40%;
+ width:200px;
+ height:200px;
  position:absolute;
- background:red;
+ left:70px;
+ background:transparent;
  padding:20px;
  box-sizing: border-box;
  transform-origin:left;
  transition:.5s;
  color:#fff;
  transform:perspective(600px) rotatey(90deg);
+  text-align:center;
+  
+
 }
 .textBox h3
 {
- margin:10px;
+ margin:50px;
  font-size:15px;
  font-weight:bold;
  
@@ -362,8 +361,7 @@ form select:hover
 .textBox p
 {
   font-size:12px;
-  text-align:center;
-  
+  text-align:center
 }
 .textBox a
 {
@@ -378,6 +376,7 @@ form select:hover
 {
  transform:perspective(600px) rotatey(0deg);
 }
+
 footer .address
 {
  color:#848b8b;
@@ -387,11 +386,17 @@ footer .address:hover
 {
  opacity:.6
 }
-ol li 
+.footerList li a
 {
-  cursor:pointer
+  cursor:pointer;
+  color:#fff;
+  text-decoration:none
 }
-ol li:hover
+.footerList li a:hover
 {
   opacity:.7
+}
+footer p
+{
+ margin-top:40px
 }
